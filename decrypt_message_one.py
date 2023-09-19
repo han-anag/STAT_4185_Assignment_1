@@ -41,7 +41,7 @@ encrypted_message = encrypted_file.readline()
 encrypted_file.close()
 
 # Write code below
-msg = []
+msg = ""
 reverse_cipher = {cipher[i]:i for i in cipher}
 
 # print(reverse_cipher)
@@ -50,5 +50,4 @@ for letter in encrypted_message:
     #I know this is not very efficient at all but I'm too lazy to output it as a list
     msg = msg + reverse_cipher[letter]
 
-print(encrypted_message)
 print(msg)
